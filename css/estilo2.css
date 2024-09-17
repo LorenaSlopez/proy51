@@ -1,0 +1,71 @@
+.content {
+    background-color: aqua;
+    padding: 10px;
+    font-size: 23px;
+    display: grid;
+    text-align: center;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 3fr 1fr;
+    grid-template-areas: 
+        "head head head" 
+        "menu menu menu" 
+        "con con pub" 
+        "f f f";
+}
+
+.content > div {
+    background-color: cornflowerblue;
+}
+
+.content .head {
+    background-color: darksalmon;
+    grid-area: head;
+}
+
+.content .menu {
+    background-color: rgb(197, 85, 231);
+    grid-area: menu;
+}
+
+.content .con {
+    background-color: rgb(107, 235, 107);
+    grid-area: con;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.content .pub {
+    background-color: rgb(235, 216, 107);
+    grid-area: pub;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.content .f {
+    background-color: rgb(231, 107, 235);
+    grid-area: f;
+}
+
+.box1, .box2 {
+    background-color: lightblue;
+    padding: 10px;
+    
+    border-radius: 5px;
+    
+}
+
+.box1 {
+    background-color: lightcoral;
+}
+
+.box2 {
+    background-color: lightgoldenrodyellow;
+}
